@@ -18,14 +18,28 @@ class UnAuthenticated extends AuthState {
   List<Object?> get props => [];
 }
 
-class WrongPassword extends AuthState {
+class ResponseEmail extends AuthState {
+  final String alert;
+
+  ResponseEmail(this.alert);
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [alert];
 }
 
-class UserNotFound extends AuthState {
+class ResponsePassword extends AuthState {
+  final String alert;
+
+  ResponsePassword(this.alert);
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [alert];
+}
+
+class DialogNotification extends AuthState {
+  final String notification;
+
+  DialogNotification(this.notification);
+  @override
+  List<Object?> get props => [notification];
 }
 
 class AuthError extends AuthState {

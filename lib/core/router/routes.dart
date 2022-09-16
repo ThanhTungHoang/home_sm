@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:home_sm/ui/dashboard/dashboard.dart';
-import 'package:home_sm/ui/sign_in/sign_in_screen.dart';
 import 'package:home_sm/ui/sign_up/sign_up_screen.dart';
+
+import '../../ui/dashboard/dashboard_screen.dart';
+import '../../ui/sign_in/sign_in_screen.dart';
 part 'route_config.dart';
 
 class Routes {
